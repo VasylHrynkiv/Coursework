@@ -1,0 +1,31 @@
+{% extends 'TermPaper/same.html' %}
+
+{% block body%}
+</br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>Developer</th>
+      <th>Launched</th>
+      <th>Bit</th>
+      <th>clock_rate</th>
+      <th>Package</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for el in obj %}
+    <tr>
+      <td>{{el.id}}</td>
+      <td>{{el.name}}</td>
+      <td>{{el.developer}}</td>
+      <td>{{el.launched}}</td>
+      <td>{{el.bit}}</td>
+      <td>{{el.clock_rate}}</td>
+      <td>{{el.package}}</td>
+   </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

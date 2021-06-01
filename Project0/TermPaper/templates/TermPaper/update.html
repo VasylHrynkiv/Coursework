@@ -1,0 +1,13 @@
+{% extends 'TermPaper/same.html' %}
+
+{% block body%}
+        <center>
+            <br>
+            <h1>Upate model</h1>
+            <form action = "" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Update" class="btn btn-success"> 
+            </form>
+        </center>
+{% endblock %}

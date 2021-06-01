@@ -1,0 +1,11 @@
+{% extends 'TermPaper/output.html' %}
+
+{% block headtab %}
+<th>Package</th>
+<th>Function</th>
+{% endblock %}
+
+{% block infotab %}
+<td>{{el.pack_name}}</td>
+<td><a href="{% url 'delpack' el.id %}" class="btn btn-danger">Delete</a></td>
+{% endblock %}

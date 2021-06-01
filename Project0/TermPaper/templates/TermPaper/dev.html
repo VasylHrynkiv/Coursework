@@ -1,0 +1,11 @@
+{% extends 'TermPaper/output.html' %}
+
+{% block headtab %}
+<th>Developer</th>
+<th>Function</th>
+{% endblock %}
+
+{% block infotab %}
+<td>{{el.dev_name}}</td>
+<td><a href="{% url 'deldev' el.id %}" class="btn btn-danger">Delete</a></td>
+{% endblock %}

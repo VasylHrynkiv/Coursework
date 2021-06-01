@@ -1,0 +1,19 @@
+{% extends 'TermPaper/same.html' %}
+
+{% block body%}
+</br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      {% block headtab %}{% endblock %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for el in obj %}
+    <tr>
+      {% block infotab %}{% endblock %}
+   </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
